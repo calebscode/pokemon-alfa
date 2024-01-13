@@ -26,9 +26,7 @@ export default function Navbar() {
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            Alfa
-          </Typography>
+          <img className="nav-logo" src={"./Alfa.png"} />
           <DrawerNav open={drawerOpen} setDrawerOpen={setDrawerOpen}/>
           <Button color="inherit">Login</Button>
         </Toolbar>

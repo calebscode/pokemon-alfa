@@ -1,6 +1,6 @@
-import useFetch from "../../lib/useFetch";
+import useFetch from "../../../lib/useFetch";
 import { Container } from "@mui/material";
-import ItemList from "../components/ItemList";
+import ItemList from "./ItemList";
 
 export default function Bag() {
   const url = "http://localhost:3000/users/1"

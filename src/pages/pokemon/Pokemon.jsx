@@ -1,6 +1,6 @@
-import useFetch from "../../lib/useFetch";
+import useFetch from "../../../lib/useFetch";
 import { Container } from "@mui/material";
-import PokemonList from "../components/PokemonList";
+import PokemonList from "./PokemonList";
 
 export default function Pokemon() {
   const url = "http://localhost:3000/users/1/"

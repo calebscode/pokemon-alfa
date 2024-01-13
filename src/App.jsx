@@ -1,11 +1,11 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import Pokemon from "./pages/Pokemon";
-import Trainer from "./pages/Trainer";
-import Bag from "./pages/Bag";
-import Pokedex from "./pages/Pokedex";
-import Map from "./pages/Map";
-import Layout from "./components/Layout";
+import Pokemon from "./pages/pokemon/Pokemon";
+import Trainer from "./pages/trainer/Trainer";
+import Bag from "./pages/bag/Bag";
+import Pokedex from "./pages/pokedex/Pokedex";
+import Map from "./pages/map/Map";
+import Layout from "./util/Layout";
 
 const darkTheme = createTheme({
   palette: {
