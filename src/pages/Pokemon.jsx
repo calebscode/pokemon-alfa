@@ -1,7 +1,5 @@
-import { useEffect, useState } from "react";
-import PokemonCard from "../components/PokemonCard";
-import { Container } from "@mui/material";
 import useFetch from "../../lib/useFetch";
+import { Container } from "@mui/material";
 import PokemonList from "../components/PokemonList";
 
 export default function Pokemon() {
@@ -9,8 +7,8 @@ export default function Pokemon() {
   const { error, isPending, data } = useFetch(url)
 
   return (
-    <Container>
-      { error && <div className="error">{ error }</div> }
+    <Container className="pokemon">
+      { error && <div className="error">Error: { error }</div> }
       { isPending && <div>Loading...</div> }
       { data && <PokemonList mons={data.trainerData.pokemonList} /> }
     </Container>

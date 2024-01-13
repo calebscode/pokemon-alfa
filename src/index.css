@@ -18,3 +18,19 @@ a {
 .nav-logo {
   max-height: 40px;
 }
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.bag-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-num {
+  display: inherit;
+  align-items: center;
+}

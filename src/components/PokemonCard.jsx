@@ -14,7 +14,7 @@ export default function PokemonCard({ mon }) {
   } = mon;
 
   return (
-    <Box>
+    <Box className="pkmn-card">
     <Box sx={{display: "flex", justifyContent: "space-between"}}>
       <Typography variant="h4">{name}</Typography>
       <Typography gutterBottom variant="h6">
