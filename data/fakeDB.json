@@ -17,6 +17,7 @@
           {
             "name": "Mareep",
             "avatar": null,
+            "isInParty": true,
             "types": ["Electric"],
             "maxHp": 13,
             "currentHp": 10,
@@ -66,6 +67,7 @@
           {
             "name": "Rattata",
             "avatar": null,
+            "isInParty": true,
             "types": ["Normal"],
             "maxHp": 10,
             "currentHp": 3,
