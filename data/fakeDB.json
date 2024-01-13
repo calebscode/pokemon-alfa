@@ -1,0 +1,175 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "example@example.com",
+      "password": "something encrypted",
+      "trainer_data": {
+        "trainer": {
+          "name": "Bug Catcher Timmy",
+          "avatar": null,
+          "bio": "Mollit velit ad elit mollit. Lorem ad deserunt voluptate irure anim do exercitation sint sint nostrud. Irure dolor commodo eu est excepteur eu.",
+          "level": 3,
+          "xp": 100,
+          "level_path": null
+        },
+        "pokemon_list": [
+          {
+            "name": "Mareep",
+            "avatar": null,
+            "types": ["Electric"],
+            "max_hp": 13,
+            "current_hp": 10,
+            "level": 1,
+            "stats": {
+              "xp": 135,
+              "atk": 5,
+              "def": 4,
+              "sp_atk": 6,
+              "sp_def": 3,
+              "speed": 5,
+              "ac": 10,
+              "sp_ac": 11
+            },
+            "nature": "Modest",
+            "ability": {
+              "name": "Static",
+              "description": "When attacked physically, roll a d12. If rolled 9 or higher, paralyze the attacker."
+            },
+            "moves": [
+              {
+                "name": "Tackle",
+                "type": "Normal",
+                "is_physical": true,
+                "description": "Deals 1d4 damage plus your ATK modifier."
+              },
+              {
+                "name": "Growl",
+                "type": "Normal",
+                "is_physical": false,
+                "description": "Lowers the opponent's attack if they fail their saving throw."
+              },
+              {
+                "name": "Thunder Wave",
+                "type": "Electric",
+                "is_physical": false,
+                "description": "Paralyzes the opponent if they fail their saving throw."
+              },
+              {
+                "name": null,
+                "type": null,
+                "is_physical": null,
+                "description": null
+              }
+            ]
+          },
+          {
+            "name": "Rattata",
+            "avatar": null,
+            "types": ["Normal"],
+            "max_hp": 10,
+            "current_hp": 3,
+            "level": 1,
+            "stats": {
+              "xp": 10,
+              "atk": 9,
+              "def": 2,
+              "sp_atk": 3,
+              "sp_def": 2,
+              "speed": 5,
+              "ac": 10,
+              "sp_ac": 10
+            },
+            "nature": "Timid",
+            "ability": {
+              "name": "Guts",
+              "description": "Deals extra 1d4 damage when inflicted with a status condition."
+            },
+            "moves": [
+              {
+                "name": "Scratch",
+                "type": "Normal",
+                "is_physical": true,
+                "description": "Deals 1d4 damage plus your ATK modifier."
+              },
+              {
+                "name": "Tail Whip",
+                "type": "Normal",
+                "is_physical": false,
+                "description": "Lowers the opponent's defense if they fail their saving throw."
+              },
+              {
+                "name": null,
+                "type": null,
+                "is_physical": null,
+                "description": null
+              },
+              {
+                "name": null,
+                "type": null,
+                "is_physical": null,
+                "description": null
+              }
+            ]
+          }
+        ],
+        "pokedex": [
+          {
+            "name": "Mareep",
+            "is_caught": true
+          },
+          {
+            "name": "Rattata",
+            "is_caught": true
+          },
+          {
+            "name": "Gastly",
+            "is_caught": false
+          },
+          {
+            "name": "Scyther",
+            "is_caught": false
+          },
+          {
+            "name": "Noibat",
+            "is_caught": false
+          },
+          {
+            "name": "Pidgey",
+            "is_caught": false
+          },
+          {
+            "name": "Eevee",
+            "is_caught": false
+          }
+        ],
+        "bag": {
+          "money": 125,
+          "items": [
+            {
+              "name": "Pokeball",
+              "quantity": 9
+            },
+            {
+              "name": "Potion",
+              "quantity": 2
+            },
+            {
+              "name": "Great Ball",
+              "quantity": 1
+            },
+            {
+              "name": "Exp. Share",
+              "quantity": 1
+            }
+          ]
+        },
+        "notes": [
+          { "text": "I am from a town called Redwood Town" },
+          { "text": "We are going to Nape Town Pokemon Academy" },
+          { "text": "The scyther we spotted was ice type for some reason!" }
+        ]
+      }
+    }
+  ]
+}
