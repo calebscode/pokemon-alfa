@@ -40,3 +40,13 @@ a {
   display: flex;
   align-items: center;
 }
+
+.dex-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.caught-icon {
+  color: hsl(0, 85%, 65%);
+}

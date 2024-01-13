@@ -30,15 +30,15 @@ export default function DrawerNav({ open, setDrawerOpen }) {
       path: '/trainer'
     },
     {
-      text: "Map",
-      icon: <MapIcon/>,
-      path: '/map'
-    },
-    {
       text: "Pokédex",
       icon: <ChecklistIcon/>,
       path: '/pokedex'
     },
+    {
+      text: "Map",
+      icon: <MapIcon/>,
+      path: '/map'
+    }
   ]
 
   return (
