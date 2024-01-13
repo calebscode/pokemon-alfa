@@ -4,32 +4,32 @@
       "id": "1",
       "email": "example@example.com",
       "password": "something encrypted",
-      "trainer_data": {
+      "trainerData": {
         "trainer": {
           "name": "Bug Catcher Timmy",
           "avatar": null,
           "bio": "Mollit velit ad elit mollit. Lorem ad deserunt voluptate irure anim do exercitation sint sint nostrud. Irure dolor commodo eu est excepteur eu.",
           "level": 3,
           "xp": 100,
-          "level_path": null
+          "levelPath": null
         },
-        "pokemon_list": [
+        "pokemonList": [
           {
             "name": "Mareep",
             "avatar": null,
             "types": ["Electric"],
-            "max_hp": 13,
-            "current_hp": 10,
+            "maxHp": 13,
+            "currentHp": 10,
             "level": 1,
             "stats": {
               "xp": 135,
               "atk": 5,
               "def": 4,
-              "sp_atk": 6,
-              "sp_def": 3,
+              "spAtk": 6,
+              "spDef": 3,
               "speed": 5,
               "ac": 10,
-              "sp_ac": 11
+              "spAC": 11
             },
             "nature": "Modest",
             "ability": {
@@ -40,25 +40,25 @@
               {
                 "name": "Tackle",
                 "type": "Normal",
-                "is_physical": true,
+                "isPhysical": true,
                 "description": "Deals 1d4 damage plus your ATK modifier."
               },
               {
                 "name": "Growl",
                 "type": "Normal",
-                "is_physical": false,
+                "isPhysical": false,
                 "description": "Lowers the opponent's attack if they fail their saving throw."
               },
               {
                 "name": "Thunder Wave",
                 "type": "Electric",
-                "is_physical": false,
+                "isPhysical": false,
                 "description": "Paralyzes the opponent if they fail their saving throw."
               },
               {
                 "name": null,
                 "type": null,
-                "is_physical": null,
+                "isPhysical": null,
                 "description": null
               }
             ]
@@ -67,18 +67,18 @@
             "name": "Rattata",
             "avatar": null,
             "types": ["Normal"],
-            "max_hp": 10,
-            "current_hp": 3,
+            "maxHp": 10,
+            "currentHp": 3,
             "level": 1,
             "stats": {
               "xp": 10,
               "atk": 9,
               "def": 2,
-              "sp_atk": 3,
-              "sp_def": 2,
+              "spAtk": 3,
+              "spDef": 2,
               "speed": 5,
               "ac": 10,
-              "sp_ac": 10
+              "spAC": 10
             },
             "nature": "Timid",
             "ability": {
@@ -89,25 +89,25 @@
               {
                 "name": "Scratch",
                 "type": "Normal",
-                "is_physical": true,
+                "isPhysical": true,
                 "description": "Deals 1d4 damage plus your ATK modifier."
               },
               {
                 "name": "Tail Whip",
                 "type": "Normal",
-                "is_physical": false,
+                "isPhysical": false,
                 "description": "Lowers the opponent's defense if they fail their saving throw."
               },
               {
                 "name": null,
                 "type": null,
-                "is_physical": null,
+                "isPhysical": null,
                 "description": null
               },
               {
                 "name": null,
                 "type": null,
-                "is_physical": null,
+                "isPhysical": null,
                 "description": null
               }
             ]
@@ -116,31 +116,31 @@
         "pokedex": [
           {
             "name": "Mareep",
-            "is_caught": true
+            "isCaught": true
           },
           {
             "name": "Rattata",
-            "is_caught": true
+            "isCaught": true
           },
           {
             "name": "Gastly",
-            "is_caught": false
+            "isCaught": false
           },
           {
             "name": "Scyther",
-            "is_caught": false
+            "isCaught": false
           },
           {
             "name": "Noibat",
-            "is_caught": false
+            "isCaught": false
           },
           {
             "name": "Pidgey",
-            "is_caught": false
+            "isCaught": false
           },
           {
             "name": "Eevee",
-            "is_caught": false
+            "isCaught": false
           }
         ],
         "bag": {
