@@ -20,6 +20,10 @@ a {
   padding-right: 10px;
 }
 
+body > div.MuiDrawer-root.MuiDrawer-modal.MuiModal-root.css-1u2w381-MuiModal-root-MuiDrawer-root > div.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.css-iur3w5-MuiPaper-root-MuiDrawer-paper > div > ul > li:nth-child(2) > div > div.MuiListItemIcon-root.nav-icon.css-qklaqr-MuiListItemIcon-root > svg {
+  transform: rotate(180deg);
+}
+
 .nav-logo {
   max-height: 40px;
   margin: 0 auto;
