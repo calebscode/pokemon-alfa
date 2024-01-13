@@ -1,5 +1,4 @@
-import { CatchingPokemon } from "@mui/icons-material";
-import { Divider, Drawer, Toolbar, Typography } from "@mui/material";
+import { Divider, Drawer, Toolbar } from "@mui/material";
 import { List } from "@mui/material";
 import { ListItem } from "@mui/material";
 import { ListItemText } from "@mui/material";
@@ -15,7 +14,7 @@ export default function DrawerNav({ open, setDrawerOpen }) {
         onClose={() => setDrawerOpen(false)}>
         <List>
           <Toolbar>
-            <img src={"../../public/Alfa.png"} className="nav-logo"/>
+            <img src={"/Alfa.png"} className="nav-logo"/>
           </Toolbar>
          <ListItem onClick={() => setDrawerOpen(false)}>
             <ListItemText>
