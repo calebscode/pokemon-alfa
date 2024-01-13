@@ -4,9 +4,11 @@
   background-color: #333;
 }
 
+
 body {
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 
 a {
@@ -53,4 +55,36 @@ body > div.MuiDrawer-root.MuiDrawer-modal.MuiModal-root.css-1u2w381-MuiModal-roo
 
 .caught-icon {
   color: hsl(0, 85%, 65%);
+}
+
+.trainer-header {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.trainer-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trainer-avatar {
+  border: 1px solid black;
+  aspect-ratio: 1 / 1;
+  min-width: 90px;
+  min-height: 90px;
+  margin: 10px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 3px 8px;;
+}
+
+.trainer-section-header {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
