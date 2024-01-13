@@ -48,23 +48,27 @@ export default function DrawerNav({ open, setDrawerOpen }) {
         open={open}
         onClose={() => setDrawerOpen(false)}>
         <Box sx={{width: "100%"}}>
-          <List className="nav-links">
+          <List disablePadding className="nav-links">
             <Toolbar>
               <img src={"/Alfa.png"} className="nav-logo"/>
             </Toolbar>
+            <Divider />
             {navItems.map((item) => (
-              <ListItem key={item.text} disablePadding onClick={() => setDrawerOpen(false)}>
-                  <ListItemButton >
+              <Link to={item.path} key={item.text}>
+              <ListItem  disablePadding onClick={() => setDrawerOpen(false)}>
+                  <ListItemButton>
                   {item.icon &&
                     <ListItemIcon className="nav-icon">
                       {item.icon}
                     </ListItemIcon>
                   }
                   <ListItemText>
-                    <Link to={item.path}>{item.text}</Link>
+                    {item.text}
                   </ListItemText>
                   </ListItemButton>
               </ListItem>
+                  <Divider light/>
+              </Link>
             ))}
           </List>
         </Box>
