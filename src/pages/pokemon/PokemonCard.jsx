@@ -1,4 +1,18 @@
-import { Box, Typography } from "@mui/material";
+import {
+  Avatar,
+  Box,
+  Divider,
+  Grid,
+  IconButton,
+  Typography,
+} from "@mui/material";
+import { useState } from "react";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import ExpandLessIcon from "@mui/icons-material/ExpandLess";
+import StatsPanel from "./StatsPanel";
+import PokemonMoves from "./PokemonMoves";
+import HealthBar from "./HealthBar";
+import { Edit } from "@mui/icons-material";
 
 export default function PokemonCard({ mon }) {
   const {
@@ -13,23 +27,50 @@ export default function PokemonCard({ mon }) {
     moves,
   } = mon;
 
+  const [expanded, setExpanded] = useState(false);
+
   return (
-    <Box className="pkmn-card">
-    <Box sx={{display: "flex", justifyContent: "space-between"}}>
-      <Typography variant="h4">{name}</Typography>
-      <Typography gutterBottom variant="h6">
-        Lvl {level}
-      </Typography>
-    </Box>
-      <Typography variant="body1">
-        HP: {currentHp}/{maxHp}
-      </Typography>
-      <Typography variant="body1">Nature: {nature}</Typography>
-      <Typography variant="body1">Ability: {ability.name}</Typography>
-      <Typography gutterBottom variant="body1">
-        {ability.description}
-      </Typography>
-      <br></br>
+    <Box className="pokemon-card">
+      <Box className="pokemon-brief">
+        <Avatar className="pokemon-img">{name[0]}</Avatar>
+        <Box className="pokemon-brief-info">
+          <Box className="name-level">
+          <Box sx={{display: "flex"}}>
+            <Typography variant="h5">{name}</Typography>
+            <IconButton sx={{pl: 1}} size="small">
+              <Edit fontSize="small"/>
+            </IconButton>
+          </Box>
+            <Typography gutterBottom variant="h6">
+              Lvl {level}
+            </Typography>
+          </Box>
+          <Box>
+            <HealthBar currentHp={currentHp} maxHp={maxHp} />
+            <IconButton
+              onClick={() => setExpanded(expanded ? false : true)}
+              color="primary"
+              aria-label="show more"
+            >
+              {expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
+            </IconButton>
+          </Box>
+          {expanded && <Divider light />}
+        </Box>
+      </Box>
+      {expanded && (
+        <Box className="pokemon-details">
+          <StatsPanel stats={stats} />
+          <Box className="pokemon-details-right">
+          <PokemonMoves moves={moves}/>
+            <Typography variant="body2">Ability: {ability.name}</Typography>
+            <Typography variant="body2">Nature: {nature}</Typography>
+            <Typography gutterBottom variant="body2">
+              {ability.description}
+            </Typography>
+          </Box>
+        </Box>
+      )}
     </Box>
   );
 }
