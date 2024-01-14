@@ -2,10 +2,8 @@ import { Avatar, Box, Button, Divider, Typography } from "@mui/material";
 import { stringAvatar } from "../../../lib/avatarUtils";
 
 export default function TrainerHeader({ data }) {
-
   return (
     <>
-
       <Box className="trainer-header">
         <Avatar
           {...stringAvatar(data.trainerData.trainer.name)}
@@ -22,11 +20,16 @@ export default function TrainerHeader({ data }) {
                 {data.trainerData.trainer.xp} XP
               </Typography>
             </Box>
-            <Button variant="outlined">Edit</Button>
+            <Button
+              sx={{ bgcolor: "black", borderRadius: "8px" }}
+              variant="outlined"
+            >
+              Edit
+            </Button>
           </Box>
         </Box>
       </Box>
-      <Divider sx={{mt:"10px"}} variant="middle"/>
+      <Divider sx={{ mt: "10px" }} variant="middle" />
     </>
   );
 }

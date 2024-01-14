@@ -5,7 +5,7 @@ export default function TrainerLevelPath({ levels }) {
     <Container className="trainer-levels">
       <Box className="trainer-section-header">
         <Typography variant="h6">Level Path</Typography>
-        <Button size="small" variant="contained">
+        <Button size="small" variant="contained" color="success">
           Level Up
         </Button>
       </Box>
