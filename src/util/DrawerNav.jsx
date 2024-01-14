@@ -45,14 +45,15 @@ export default function DrawerNav({ open, setDrawerOpen }) {
     <>
 
       <Drawer
+      
         open={open}
         onClose={() => setDrawerOpen(false)}>
         <Box sx={{width: "100%"}}>
-          <List disablePadding className="nav-links">
+          <List disablePadding className="nav-links" sx={{m:"0.5rem 1rem 1rem 1rem"}}>
             <Toolbar>
               <img src={"/Alfa.png"} className="nav-logo"/>
             </Toolbar>
-            <Divider />
+            <Divider/>
             {navItems.map((item) => (
               <Link to={item.path} key={item.text}>
               <ListItem  disablePadding onClick={() => setDrawerOpen(false)}>
