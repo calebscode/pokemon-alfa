@@ -6,6 +6,7 @@ import {
   IconButton,
   Typography,
 } from "@mui/material";
+import { stringToColor } from "../../../lib/avatarUtils";
 import { useState } from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from "@mui/icons-material/ExpandLess";
@@ -32,15 +33,15 @@ export default function PokemonCard({ mon }) {
   return (
     <Box className="pokemon-card">
       <Box className="pokemon-brief">
-        <Avatar className="pokemon-img">{name[0]}</Avatar>
+        <Avatar sx={{bgcolor:stringToColor(name)}} className="pokemon-img">{name[0]}</Avatar>
         <Box className="pokemon-brief-info">
           <Box className="name-level">
-          <Box sx={{display: "flex"}}>
-            <Typography variant="h5">{name}</Typography>
-            <IconButton sx={{pl: 1}} size="small">
-              <Edit fontSize="small"/>
-            </IconButton>
-          </Box>
+            <Box sx={{ display: "flex" }}>
+              <Typography variant="h5">{name}</Typography>
+              <IconButton sx={{ pl: 1 }} size="small">
+                <Edit fontSize="small" />
+              </IconButton>
+            </Box>
             <Typography gutterBottom variant="h6">
               Lvl {level}
             </Typography>
@@ -62,7 +63,7 @@ export default function PokemonCard({ mon }) {
         <Box className="pokemon-details">
           <StatsPanel stats={stats} />
           <Box className="pokemon-details-right">
-          <PokemonMoves moves={moves}/>
+            <PokemonMoves moves={moves} />
             <Typography variant="body2">Ability: {ability.name}</Typography>
             <Typography variant="body2">Nature: {nature}</Typography>
             <Typography gutterBottom variant="body2">
