@@ -1,6 +1,7 @@
 /* general styles */
 
 :root {
+  --content-max-width: 600px;
   font-family: 'Roboto';
   box-sizing: border-box;
   background-color: #333;
@@ -16,6 +17,10 @@ a {
   text-decoration: none;
   color: white;
   font-size: 20px;
+}
+
+.pokemon, .bag, .pokedex, .trainer, .map {
+  max-width: var(--content-max-width) !important;
 }
 
 /* pokemon page */
@@ -43,8 +48,8 @@ a {
 }
 
 .pokemon-img {
-  min-width: 70px;
-  min-height: 70px;
+  min-width: 65px;
+  min-height: 65px;
 }
 
 .pokemon-brief-info > * {
