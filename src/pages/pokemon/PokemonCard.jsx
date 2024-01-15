@@ -48,16 +48,18 @@ export default function PokemonCard({ mon }) {
           </Box>
           <Box>
             <HealthBar currentHp={currentHp} maxHp={maxHp} />
-            <IconButton
+          </Box>
+            
+          {expanded && <Divider light />}
+        </Box>
+        <IconButton
               onClick={() => setExpanded(expanded ? false : true)}
               color="primary"
               aria-label="show more"
+              sx={{width:"min-content", float:"right"}}
             >
               {expanded ? <ExpandLessIcon /> : <ExpandMoreIcon />}
             </IconButton>
-          </Box>
-          {expanded && <Divider light />}
-        </Box>
       </Box>
       {expanded && (
         <Box className="pokemon-details">
